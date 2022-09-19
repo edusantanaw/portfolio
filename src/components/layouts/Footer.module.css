@@ -1,0 +1,12 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 23, 23);
+    color: #fff;
+    border-top: 1px solid #ff3c00;
+    font-size: 1.1em;
+    color: #ff3c00;
+    font-family:  sans-serif;
+}

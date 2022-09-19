@@ -1,0 +1,82 @@
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 14, 14);
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.ul_web {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav>ul>li {
+    text-decoration: none;
+    list-style: none;
+    width: 120px;
+}
+
+.ul_mobile {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px;
+    align-self: start;
+    height: 50vh;
+    z-index: 1;
+    background-color: #373636;
+    border-radius: 4px;
+    justify-content: space-around;
+    position: relative;
+}
+.ul_mobile .Link{
+    padding: 20px;
+}
+
+.Link {
+    text-decoration: inherit;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.Link:hover {
+    color: #ff3c00;
+}
+
+.bars {
+    display: none;
+    font-size: 43px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .ul_web,
+    nav p {
+        display: none;
+    }
+
+    nav {
+        background: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .ul_mobile{
+        display: flex;
+    }
+    .bars{
+        display: block;
+        align-self: flex-start;
+    }
+}
