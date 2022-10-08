@@ -1,0 +1,62 @@
+.skills{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #020813;
+    padding: 10px 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px rgb(152, 14, 14);
+}
+
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0px;
+}
+.skills ul li{
+    width: 200px;
+    height: 120px;
+    list-style: none;
+    padding: 10px;
+    background-color: #020813;
+    border-radius: 6px;
+    border: 1px solid rgb(152, 14, 14);
+    box-shadow: 0px 0px 2px 6px rgba(29, 29, 32, 0.272);
+    margin: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.skills ul li h1{
+    margin: 0px;
+    font-size: 1.5em;
+    align-self: center;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.skills li:hover{
+    background-color: rgb(152, 14, 14);
+    cursor: pointer;
+    border-color: #fff;
+    color: #fff;
+}
+.skills li:hover svg{
+    color: #fff;
+}
+
+
+.skills svg{
+    color: rgb(152, 14, 14);
+    width: 35px;
+    height: 35px;
+    transition: 0.4s;
+}

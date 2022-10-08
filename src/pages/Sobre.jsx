@@ -3,6 +3,7 @@ import Cartaz from './cartaz.webp'
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Sobre() {
+
     return (
         <div className={styles.about}>
             <div>

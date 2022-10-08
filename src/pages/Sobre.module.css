@@ -6,26 +6,29 @@
     color: #fff;
     width: 100%;
     font-size: 1.1em;
+    min-height: 100vh;
+    background-color: #020a17;
 }
 
 .about h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
-    text-shadow: 2px 2px #ff3c00;
-    box-shadow: 2px 2px #ff3c00;
+    text-shadow: 2px 2px rgb(152, 14, 14);
+    box-shadow: 2px 2px rgb(152, 14, 14);
 }
 
 .about p {
     text-align: justify;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0.2px 0.2px #ff3c00;
+    box-shadow: 0.2px 0.2px rgb(152, 14, 14);
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 1.5px;
 }
 .icons{
-    color: #ff3c00;
+    color: rgb(152, 14, 14);
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 1.9em;
 }
 
 .my{
@@ -34,7 +37,7 @@
 }
 
 .my:hover{
-    background-color: #ff3c00;
+    background-color: rgb(152, 14, 14);
     border-radius: 13%;
     color: #fff;
 }

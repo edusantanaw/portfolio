@@ -1,11 +1,17 @@
-import './Home.module.css'
+import styles from './Home.module.css'
+import perfil from '../img/perfil.png'
 
-function Home(){
-    return(
-        <div></div>
-        // <div className='Home' >
-        //     <h1>Eduardo Santana</h1>
-        // </div>
+function Home() {
+    return (
+        <section className={styles.home}>
+            <div className={styles.foto_perfil}>
+                <img src={perfil} alt="eu" />
+            </div>
+            <div>
+                <h1>Eduardo Santana</h1>
+                <h2>Full stack developer</h2>
+            </div>
+        </section>
     )
 }
 

@@ -1,56 +1,40 @@
-nav {
-    grid-area: nav;
+header {
     display: flex;
-    flex-direction: column;
-    background-color: rgb(15, 14, 14);
     align-items: center;
     justify-content: space-around;
     color: rgb(255, 255, 255);
-    font-size: 1.1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
+    width: 100%;
+    height: 11vh;
+    padding: 0px 100px;
+    position:sticky;
+    z-index: 1;
+    position:fixed;
 }
+
 
 .ul_web {
-    width: 100%;
-    height: 350px;
+    width: 60%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+header span , header li{
+    font-size: 1.1em;
+    transition: 0.1s;
 }
 
-nav>ul>li {
-    text-decoration: none;
+
+header li {
     list-style: none;
-    width: 120px;
-}
-
-.ul_mobile {
-    display: none;
-    flex-direction: column;
-    margin: 0;
-    padding: 5px;
-    align-self: start;
-    height: 50vh;
-    z-index: 1;
-    background-color: #373636;
-    border-radius: 4px;
-    justify-content: space-around;
-    position: relative;
-}
-.ul_mobile .Link{
-    padding: 20px;
-}
-
-.Link {
-    text-decoration: inherit;
-    color: rgb(255, 255, 255);
+    margin-left: 40px;
     padding: 5px;
 }
 
-.Link:hover {
-    color: #ff3c00;
+header li:hover, header span:hover {
+    color: rgb(152, 14, 14);
+    cursor: pointer;
 }
 
 .bars {
@@ -59,24 +43,66 @@ nav>ul>li {
     padding: 20px;
 }
 
+#close{
+    width: 35px;
+    height: 35px;
+    align-self: flex-end;
+    position: absolute;
+    transition: 0.1s;
+    border-radius: 4px;
+    display: none;
+}
+
+#close:hover{
+    color: rgb(152, 14, 14);
+    background-color: rgba(50, 50, 53, 0.145);
+}
+
 @media screen and (max-width: 800px) {
-    .ul_web,
-    nav p {
+    
+    header p{
         display: none;
     }
-
-    nav {
+    header {
         background: none;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
     }
-    .ul_mobile{
+    .ul_web{
+        display: none;
+    }
+    .ul_web, #ul_mobile{
+        width: 25%;
+        background-color: #242322;
+        align-self: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        height: 100vh;
+        margin-top: 0px;
+        border-right: 1px solid rgba(46, 43, 43, 0.381);
+        z-index: 1;
+    }
+    #ul_mobile{
         display: flex;
+    }
+    .ul_web  ul {
+        height: 100%;
+    }
+    .ul_web li{
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .ul_web a {
+       padding: 20px;
     }
     .bars{
         display: block;
         align-self: flex-start;
+    }
+    #close{
+        margin-top: 10px;
+        display: block;
     }
 }
