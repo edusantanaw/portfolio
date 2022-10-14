@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px 190px;
-    background-color: #02070e;
+    background-color:  #020a17;
 }
 
 .projetos h1 {
@@ -14,14 +14,17 @@
     text-shadow: 2px 2px rgb(152, 14, 14);
 }
 .projetos ul{
-    margin: 0px;
+    margin-top: 30px;
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 4em;
 }
 
 .projetos ul li{
+    width: 47%;
     list-style: none;
-   
     display: flex;
     flex-direction: column;
 }
@@ -35,24 +38,24 @@
 }
 
 .projeto{
-    margin-left: 20px;
     margin-top: 14px;
     list-style: none;
-    width: 280px;
+    width: 100%;
+    height: 300px;
     display: flex;
     align-items: center;
     border-radius: 5px;
     border: none;
-    transition: 0.3s;
+    transition: 0.4s;
     position: relative;
-    height: 150px;
 }
 .projeto img{
     max-width: 100%;
-    min-height: 190px;
     border-radius: 5px;
     position: absolute;
+    height: 300px;
 }
+
 .info_projeto{
     display: none;
     width: 100%;
@@ -66,20 +69,22 @@
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-delay: 0.15s;
 }
 
 .info_projeto a{
     width: 95%;
-    height: 40px;
+    height: 50px;
     font-size: 1.1em;
+    padding: 0.6em;
     color: #fff;
     border: none;
-    background-color: rgb(152, 14, 14);
+    background-color:#02070e;
     cursor: pointer;
     border-radius: 4px;
     margin: 1px;
     text-decoration: none;
-    padding: 5px;
+    margin-bottom: 1em;
 }
 .projeto:hover{
     transform:scale(1.02);
@@ -103,5 +108,41 @@
     100%{
         opacity: 1;
         background-color: rgba(68, 63, 63, 0.155);
+        
+    }
+}
+
+@media (max-width:1100px ){
+    .projetos ul {
+            flex-direction: column;
+    }
+    .projetos ul li{
+        width: 100%;
+        height: 25em;
+        box-shadow: 0px;
+
+    }
+    .projeto img{
+        width: 100%;
+        height: 25em;
+    }
+  
+}
+
+@media (max-width:900px){
+    .projetos h1{
+        margin-top: 0px;
+    }
+    .projetos{
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 750px){
+    .projetos ul li{
+        height: 18em; 
+    }
+    .projeto img{
+        height: 18em;
     }
 }

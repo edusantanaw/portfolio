@@ -3,7 +3,7 @@ import perfil from '../img/perfil.png'
 
 function Home() {
     return (
-        <section className={styles.home}>
+        <section className={styles.home} id="home">
             <div className={styles.foto_perfil}>
                 <img src={perfil} alt="eu" />
             </div>

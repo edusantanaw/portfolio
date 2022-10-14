@@ -1,9 +1,9 @@
 import style from "./Contato.module.css";
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contato() {
   return (
-    <section className={style.contato}>
+    <section className={style.contato} id="contact">
       <h1>Contatos</h1>
       <div>
         <h2>Telefone:</h2>
@@ -14,10 +14,19 @@ function Contato() {
         <span>eduardosantanavidal@gmail.com</span>
       </div>
       <div className={style.icons}>
-                    <FaGithub className={style.my}/>
-                    <FaInstagram className={style.my}/>
-                    <FaLinkedin className={style.my}/>
-                </div>
+          <a href="https://github.com/edusantanaw">
+            <FaGithub className={style.my} />
+            <span>Github</span>
+          </a>
+          <a href="https://www.instagram.com/edusantanaw/">
+            <FaInstagram className={style.my} />
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/eduardo-santana-vidal-7a4926245/">
+            <FaLinkedin className={style.my} />
+            <span>Linkedin</span>
+          </a>
+      </div>
     </section>
   );
 }

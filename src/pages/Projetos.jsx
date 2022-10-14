@@ -2,10 +2,12 @@ import styles from "./Projetos.module.css";
 import Projeto1 from "../img/Projeto1.png";
 import Projeto2 from "../img/moon.png";
 import Projeto3 from '../img/fylo.png'
+import smartfit from '../img/smartfit.png'
+import loopstudios from '../img/loop.png'
 
 function Projetos() {
   return (
-    <section className={styles.projetos}>
+    <section className={styles.projetos} id="projects">
       <h1>Meus projetos</h1>
       <div>
         <ul>
@@ -39,6 +41,28 @@ function Projetos() {
                   fylo
                 </span>
                 <a href="https://fylo-edusantanaw.netlify.app/">Ver Projeto</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className={styles.projeto}>
+              <img src={smartfit} alt="Projeto 3" />
+              <div className={styles.info_projeto}>
+                <span>
+                  Smartfit-challenge
+                </span>
+                <a href="https://smartfitchallenge.netlify.app/">Ver Projeto</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className={styles.projeto}>
+              <img src={loopstudios} alt="Projeto 3" />
+              <div className={styles.info_projeto}>
+                <span>
+                Loopstudios
+                </span>
+                <a href="https://vrpage.netlify.app/">Ver Projeto</a>
               </div>
             </div>
           </li>

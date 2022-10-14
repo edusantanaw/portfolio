@@ -4,9 +4,15 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #02070e;
-    color: #fff;
-   
     font-size: 1.1em;
-    color: rgb(152, 14, 14);
     font-family:  sans-serif;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer span{
+    color: rgb(152, 14, 14);
+    font-size: 1.2em;
 }

@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: #fff;
     width: 100%;
+    padding: 0 150px 0 190px;
     font-size: 1.1em;
     min-height: 100vh;
     background-color: #020a17;
@@ -25,15 +26,17 @@
     letter-spacing: 1.5px;
 }
 .icons{
-    color: rgb(152, 14, 14);
+ 
     display: flex;
     flex-direction: row;
     font-size: 1.9em;
 }
 
 .my{
+    color: rgb(152, 14, 14);
     padding: 7px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .my:hover{
@@ -48,11 +51,28 @@
     margin-top: 45px;
 }
 
-@media (max-width: 1030px){
-    .about img{
-        display: none;
+@media (max-width: 1050px){
+    .about{
+        padding: 0 130px 0 130px;
     }
     .about{
         font-size: 1rem;
+    }
+    .about img{
+        width: 300px;
+    }
+    .about p{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 900px){
+    .about{
+        padding: 20px;
+        justify-content: center;
+    }
+    .about img{
+        display: none;
+
     }
 }

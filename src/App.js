@@ -7,9 +7,10 @@ import Skills from "./pages/Skills";
 import Contato from "./pages/Contato";
 
 
+
 function App() {
   return (
-    <div className="principal">
+    <div>
       <NavBar />
       <Home />
       <Sobre />

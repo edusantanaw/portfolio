@@ -12,7 +12,7 @@ import styles from "./Skills.module.css";
 
 function Skills() {
   return (
-    <section className={styles.skills} attr="left">
+    <section className={styles.skills} id="skills">
       <h1>Tecnologias</h1>
       <ul>
         <li>
