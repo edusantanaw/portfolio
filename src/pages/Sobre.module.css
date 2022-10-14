@@ -76,3 +76,18 @@
 
     }
 }
+
+@media (max-width: 600px){
+    .about h1{
+        box-shadow: none;
+        text-align: center;
+    
+    }
+    .about p {
+        text-align: center;
+        box-shadow: none;
+    }
+    .icons{
+        display: none;
+    }
+}

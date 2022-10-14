@@ -96,6 +96,7 @@
     .home{
         padding: 0px;
         background-color:  #020a17;
+        height: 80vh;
     }
     .home::before{
         background-image: none;
