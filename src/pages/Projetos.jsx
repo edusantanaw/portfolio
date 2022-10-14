@@ -1,9 +1,9 @@
 import styles from "./Projetos.module.css";
-import Projeto1 from "../img/Projeto1.png";
-import Projeto2 from "../img/moon.png";
-import Projeto3 from '../img/fylo.png'
-import smartfit from '../img/smartfit.png'
-import loopstudios from '../img/loop.png'
+import Projeto1 from "../img/Projeto1.webp";
+import Projeto2 from "../img/moon.webp";
+import Projeto3 from '../img/fylo.webp'
+import smartfit from '../img/smartfit.webp'
+import loopstudios from '../img/loop.webp'
 
 function Projetos() {
   return (

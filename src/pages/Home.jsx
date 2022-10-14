@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import perfil from '../img/perfil.png'
+import perfil from '../img/perfil.webp'
 
 function Home() {
     return (
