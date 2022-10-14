@@ -1,5 +1,5 @@
 import styles from './Sobre.module.css'
-import Cartaz from './cartaz.webp'
+import Cartaz from '../img/cartaz.webp'
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Sobre() {
