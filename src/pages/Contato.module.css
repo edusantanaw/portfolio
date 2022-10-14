@@ -29,12 +29,11 @@
 }
 .icons {
   width: 100%;
-  display: flex;
+  align-items: flex-start !important;
   flex-direction: column;
   gap: 1em;
 }
 .icons a {
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 0.4em;
