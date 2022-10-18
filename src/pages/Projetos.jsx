@@ -22,6 +22,17 @@ function Projetos() {
               </div>
             </div>
           </li>
+           <li>
+            <div className={styles.projeto}>
+              <img src={smartfit} alt="Projeto 3" />
+              <div className={styles.info_projeto}>
+                <span>
+                  Smartfit-challenge
+                </span>
+                <a href="https://smartfitchallenge.netlify.app/">Ver Projeto</a>
+              </div>
+            </div>
+          </li>
           <li>
             <div className={styles.projeto}>
               <img src={Projeto2} alt="Projeto 2" />
@@ -41,17 +52,6 @@ function Projetos() {
                   fylo
                 </span>
                 <a href="https://fylo-edusantanaw.netlify.app/">Ver Projeto</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className={styles.projeto}>
-              <img src={smartfit} alt="Projeto 3" />
-              <div className={styles.info_projeto}>
-                <span>
-                  Smartfit-challenge
-                </span>
-                <a href="https://smartfitchallenge.netlify.app/">Ver Projeto</a>
               </div>
             </div>
           </li>
